@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hq-example-google-directory-export"
+version = "0.1.0"
+description = "Example scripting to illustrate pulling audience members from Google Directory for sFTP export to WorkOS."
+authors = ["Dave Cumberland <dave@axioshq.com>"]
+readme = "README.md"
+packages = [{include = "hq_example_google_directory_export"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+google-auth = "^2.34.0"
+google-auth-oauthlib = "^1.2.1"
+google-auth-httplib2 = "^0.2.0"
+google-api-python-client = "^2.143.0"
+python-dotenv = "^1.0.1"
+paramiko = "^3.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
